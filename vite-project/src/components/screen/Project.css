@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 40px;
+}
+
+.white-group {
+  height: 57px;
+  width: 268px;
+}
+
+.white-group img {
+  max-width: 100%;
+  height: auto;
+}
+
+.icon-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icon-group .icon {
+  width: 54px;
+  height: 54px;
+}
+
+.icon-group .icon-main {
+  width: 60px;
+  height: 60px;
+}
+
+/* Box Styling */
+.box {
+  height: 423px;
+  width: 823px;
+
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  text-align: center;
+  color: #7e22ce;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.text-name{
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #838383;
+  
+}
+.group-main{
+  height: 296px;
+  width: 442px;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+}
+.add-btn {
+  background-color: #16181b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .icon-group {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .box {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+}
+
+/* Animation for Box */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.box {
+  animation: fadeIn 0.5s ease-in-out;
+}
